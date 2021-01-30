@@ -1,9 +1,17 @@
-import React, { FC } from 'react';
+import React, {FC, useState} from 'react';
+import {FilterableContainer} from './FilterableContainer';
 
 type Props = {};
 
 export const Hello: FC<Props> = ({}) => {
-  return <div>
-    <h1>Hello React</h1>
-  </div>;
+  const [keyword, setKeyword] = useState('')
+
+  return <>
+    <input type={'type'} value={keyword} onChange={event => setKeyword(event.target.value)}/>
+    <hr/>
+    <FilterableContainer keyword={keyword}>
+      <div>Apple</div>
+      <div>Banana</div>
+    </FilterableContainer>
+  </>
 }

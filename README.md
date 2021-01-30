@@ -1,9 +1,9 @@
-TypeScript React Hello World Demo
+TypeScript React Filter Children from Outside Demo
 =================================
+
+如何从外部来对内容组件进行filter
 
 ```
 npm install
 npm run demo
 ```
-
-It will open page on browser automatically.
